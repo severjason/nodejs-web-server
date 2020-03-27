@@ -34,6 +34,7 @@ app.get('/about', (req, res) => {
   res.render('page', {
     head: 'About',
     title: 'About',
+    helpText: 'About page',
   });
 });
 
@@ -70,6 +71,7 @@ app.get('/help', (req, res) => {
   res.render('page', {
     head: 'Help',
     title: 'Help',
+    helpText: 'About page',
   });
 });
 
