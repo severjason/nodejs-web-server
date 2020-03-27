@@ -1,6 +1,6 @@
 const getWeather = async (location = '', callback = () => {}) => {
   try {
-    const resp = await fetch(`http://localhost:3000/weather?address=${location}`);
+    const resp = await fetch(`/weather?address=${location}`);
     const res = await resp.json();
     callback(undefined, res);
   } catch (e) {
